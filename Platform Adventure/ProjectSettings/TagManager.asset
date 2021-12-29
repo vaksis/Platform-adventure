@@ -41,3 +41,24 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: BackGround
+    uniqueID: 3089831399
+    locked: 0
+  - name: MiddleGround
+    uniqueID: 1988718075
+    locked: 0
+  - name: Props
+    uniqueID: 603046351
+    locked: 0
+  - name: Collectibles
+    uniqueID: 4029358511
+    locked: 0
+  - name: Enemy
+    uniqueID: 1001955771
+    locked: 0
+  - name: ForeGround
+    uniqueID: 2238218455
+    locked: 0
+  - name: Player
+    uniqueID: 3467154317
+    locked: 0
