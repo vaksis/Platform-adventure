@@ -117,4 +117,14 @@ public class PlayerController : MonoBehaviour
         Scaler.x = Scaler.x * -1;
         transform.localScale = Scaler;
     }
+
+    //===========On collision enter 2D===========
+    void OnTriggerEnter2D(Collider2D col)
+    {
+        //Loads new level when player collides with object tag "House"
+        if (col.gameObject.tag == "House")
+        {
+            SceneManager.LoadScene("lvlClear");
+        }
+    }
 }
