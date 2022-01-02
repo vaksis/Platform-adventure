@@ -126,5 +126,10 @@ public class PlayerController : MonoBehaviour
         {
             SceneManager.LoadScene("lvlClear");
         }
+
+        if(col.gameObject.tag == "Spike")
+        {
+            SceneManager.LoadScene("GameOver");
+        }
     }
 }
