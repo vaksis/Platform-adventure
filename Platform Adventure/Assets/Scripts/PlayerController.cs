@@ -1,4 +1,16 @@
-﻿using System.Collections;
+﻿/*
+ * Playercontroller.cs 
+ * 
+ * player controller controls all the interactive things that player can witness
+ * 
+ * The script also features all the basic mechanics for the player
+ * like movement, animation and all the stuff that player can interact
+ * 
+ * Date 4.1.2022
+ */
+
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -6,9 +18,10 @@ using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
+    //=========ANIMATION===========
     Animator m_Animator;
 
-
+    //=========MOVEMENT===========
     public float speed;
     public float jumpforce;
     public float moveInput;
@@ -34,6 +47,7 @@ public class PlayerController : MonoBehaviour
         extraJumps = extraJumpValue;
         rb = GetComponent<Rigidbody2D>();
 
+        //=========ANIMATION===========
         m_Animator = gameObject.GetComponent<Animator>();
 
     }
@@ -61,6 +75,7 @@ public class PlayerController : MonoBehaviour
 
     void FixedUpdate()
     {
+        //=========MOVEMENT===========
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, checkRadius, whatIsGround);
 
         // oikea nuoli = 1, vasen nuoli = -1
@@ -83,6 +98,7 @@ public class PlayerController : MonoBehaviour
             SceneManager.LoadScene("GameOver");
         }
 
+        //=========ANIMATION===========
         if (moveInput < 0)
         {
             m_Animator.SetBool("Run_Left", true);
@@ -99,6 +115,7 @@ public class PlayerController : MonoBehaviour
             m_Animator.SetBool("Run_Right", false);
         }
 
+        //=========MOVEMENT===========
         if (isGrounded == true && rb.velocity.y == 0)
         {
             m_Animator.SetBool("Jump", false);
