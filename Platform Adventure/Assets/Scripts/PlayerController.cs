@@ -131,5 +131,10 @@ public class PlayerController : MonoBehaviour
         {
             SceneManager.LoadScene("GameOver");
         }
+
+        if(col.gameObject.tag == "Enemy")
+        {
+            SceneManager.LoadScene("GameOver");
+        }
     }
 }
