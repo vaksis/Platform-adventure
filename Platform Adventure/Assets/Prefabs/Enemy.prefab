@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6486690468711990194}
   - component: {fileID: 6486690468711990193}
   - component: {fileID: 6486690468711990192}
+  - component: {fileID: 6007968004686617265}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Enemy
@@ -149,3 +150,22 @@ MonoBehaviour:
   distance: 0
   agroRange: 8
   speed: 3
+--- !u!95 &6007968004686617265
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6486690468711990199}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7eea29d1dd6c04e4db4a209dbd75d288, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
