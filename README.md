@@ -17,4 +17,4 @@ Project to make platformer game where are rpg elements
 
 ## Authors
 
-* **Olivia** - *CEO of the project, bug fixes, hosting, code review, and continuing development.* 
+* **Arttu Muunoja** - *CEO of the project, bug fixes, hosting, code review, and continuing development.* 
